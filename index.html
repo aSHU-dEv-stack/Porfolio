@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ashutosh Mishra - Full Stack Developer specializing in Cybersecurity, Web Development, UI/UX Design, and AI">
+    <meta name="author" content="Ashutosh Mishra">
+    <title>Ashutosh Mishra - Full Stack Technologist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Ashutosh Mishra</div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particle-canvas" class="particle-background"></canvas>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Ashutosh</span>
+                    </h1>
+                    <p class="hero-description">
+                        A versatile technologist specializing in Cybersecurity, Web Development, UI/UX Design, and AI. 
+                        I create secure, intelligent, and user-centered digital solutions that solve complex problems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Hire Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="public/images/ashutosh-profile.jpg" alt="Ashutosh Mishra" class="profile-image">
+                        <div class="profile-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">
+                    A multidisciplinary technologist with expertise across four core domains
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p class="about-paragraph">
+                        With expertise spanning Cybersecurity, Web Development, UI/UX Design, and Artificial Intelligence, 
+                        I bring a unique multidisciplinary approach to technology solutions. My experience includes building 
+                        secure web applications, designing intuitive user interfaces, implementing AI-driven features, and 
+                        conducting comprehensive security assessments.
+                    </p>
+                    <p class="about-paragraph">
+                        I believe in creating technology that is not only functional and beautiful, but also secure and 
+                        intelligent. Whether it's developing ML-powered applications, designing user-centric interfaces, 
+                        building robust web platforms, or securing digital assets, I focus on delivering solutions that 
+                        make a meaningful impact.
+                    </p>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </button>
+                </div>
+                <div class="about-skills fade-in">
+                    <h3 class="skills-title">Skills & Expertise</h3>
+                    <div class="skills-grid" id="skills-grid"></div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="25">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="4">0</div>
+                            <div class="stat-label">Tech Domains</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Security Audits</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Domains Section -->
+    <section class="tech-domains">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Tech Expertise</h2>
+                <p class="section-subtitle">
+                    Multidisciplinary expertise across four core technology domains
+                </p>
+            </div>
+            <div class="domains-grid">
+                <div class="domain-card fade-in">
+                    <div class="domain-icon cybersecurity-gradient">🛡️</div>
+                    <h3 class="domain-title">Cybersecurity</h3>
+                    <p class="domain-description">
+                        Penetration testing, security audits, risk assessment, and threat analysis
+                    </p>
+                    <div class="domain-skills">
+                        <span class="skill-tag">Ethical Hacking</span>
+                        <span class="skill-tag">Network Security</span>
+                        <span class="skill-tag">OWASP</span>
+                        <span class="skill-tag">Security Compliance</span>
+                    </div>
+                </div>
+                <div class="domain-card fade-in">
+                    <div class="domain-icon webdev-gradient">💻</div>
+                    <h3 class="domain-title">Web Development</h3>
+                    <p class="domain-description">
+                        Full-stack development with modern frameworks and secure coding practices
+                    </p>
+                    <div class="domain-skills">
+                        <span class="skill-tag">React/Next.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">API Development</span>
+                    </div>
+                </div>
+                <div class="domain-card fade-in">
+                    <div class="domain-icon design-gradient">🎨</div>
+                    <h3 class="domain-title">UI/UX Design</h3>
+                    <p class="domain-description">
+                        User-centered design with focus on accessibility and conversion optimization
+                    </p>
+                    <div class="domain-skills">
+                        <span class="skill-tag">User Research</span>
+                        <span class="skill-tag">Prototyping</span>
+                        <span class="skill-tag">Design Systems</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
+                </div>
+                <div class="domain-card fade-in">
+                    <div class="domain-icon ai-gradient">🤖</div>
+                    <h3 class="domain-title">Artificial Intelligence</h3>
+                    <p class="domain-description">
+                        Machine learning integration and AI-powered application development
+                    </p>
+                    <div class="domain-skills">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">AI Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    Here are some of my recent projects that showcase my multidisciplinary approach
+                </p>
+            </div>
+            <div class="projects-grid" id="projects-grid"></div>
+        </div>
+    </section>
+
+    <!-- Design Process Section -->
+    <section class="design-process">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">My Development Process</h2>
+                <p class="section-subtitle">
+                    A systematic approach to creating secure, intelligent, and user-centered solutions
+                </p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step fade-in">
+                    <div class="process-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="process-title">Research & Analysis</h3>
+                    <p class="process-description">
+                        User research, security assessments, market analysis, and requirement gathering across all domains.
+                    </p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="process-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3 class="process-title">Architecture & Planning</h3>
+                    <p class="process-description">
+                        System architecture, security frameworks, user flows, and AI model selection for optimal solutions.
+                    </p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="process-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="process-title">Development & Design</h3>
+                    <p class="process-description">
+                        Secure coding, responsive design, ML implementation, and user interface development.
+                    </p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="process-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="process-title">Testing & Deployment</h3>
+                    <p class="process-description">
+                        Security testing, user testing, AI model validation, and secure deployment practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <p class="section-subtitle">
+                    Professional certifications and recognition in multiple technology domains
+                </p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card fade-in">
+                    <div class="cert-icon">🛡️</div>
+                    <h4 class="cert-title">Certified Ethical Hacker</h4>
+                    <p class="cert-org">EC-Council</p>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-icon">☁️</div>
+                    <h4 class="cert-title">AWS Solutions Architect</h4>
+                    <p class="cert-org">Amazon</p>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-icon">🎨</div>
+                    <h4 class="cert-title">Google UX Design</h4>
+                    <p class="cert-org">Google</p>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-icon">🤖</div>
+                    <h4 class="cert-title">TensorFlow Developer</h4>
+                    <p class="cert-org">Google</p>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-icon">⚛️</div>
+                    <h4 class="cert-title">React Developer</h4>
+                    <p class="cert-org">Meta</p>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-icon">🔒</div>
+                    <h4 class="cert-title">Cybersecurity Analyst</h4>
+                    <p class="cert-org">IBM</p>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-icon">✨</div>
+                    <h4 class="cert-title">UI/UX Design</h4>
+                    <p class="cert-org">Adobe</p>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-icon">🧠</div>
+                    <h4 class="cert-title">Machine Learning</h4>
+                    <p class="cert-org">Stanford</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">What People Say</h2>
+                <p class="section-subtitle">
+                    Feedback from clients and colleagues I've had the pleasure to work with
+                </p>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial-card" id="testimonial-card"></div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn" id="prev-testimonial" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="testimonial-btn" id="next-testimonial" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">
+                    Have a project in mind? I'd love to hear about it and discuss how we can bring your ideas to life.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3 class="contact-title">Get in Touch</h3>
+                    <div class="contact-links">
+                        <div class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>ashutosh.mishra@email.com</span>
+                        </div>
+                        <div class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://linkedin.com/in/ashutosh-mishra" target="_blank" rel="noopener">linkedin.com/in/ashutosh-mishra</a>
+                        </div>
+                        <div class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/ashutosh-mishra" target="_blank" rel="noopener">github.com/ashutosh-mishra</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container fade-in">
+                    <form class="contact-form" id="contact-form">
+                        <h3 class="form-title">Send a Message</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Discussion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ashutosh Mishra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
